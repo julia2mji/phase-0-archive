@@ -1,0 +1,6 @@
+Task: Leave house
+
+When I reach the door, go to alarm panel. 
+At alarm panel, press arm away and enter password. 
+Once the alarm is activated, I have 60 seconds to open the door and exit the house. The alarm counts down from 60. Otherwise, the alarm will sound and all emergency contacts will be notified. 
+If I do leave the house within 60 seconds, the alarm will not activate and the warning count will stop. 

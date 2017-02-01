@@ -13,4 +13,8 @@
 #pseudocode
 #prompt using puts for all of the required info
 #convert input to integer/string form using gets.to_i, etc. 
-#
+#set up hash with client data, the client's name, age, number of children, decor theme, and so on
+#print hash to screen
+#update the hash? but with what? 
+#print updated hash using p. __ <- hash name 
+

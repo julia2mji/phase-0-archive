@@ -21,10 +21,42 @@ class Santa
 		puts "That was a good #{cookie_type} cookie"
 	end 
 
+	def celebrate_birthday (new_age)
+		@age = age + 1 #i'm not really sure that i'm doing this right
+	end	
+
+	def get_mad_at (reindeer_name)
+		
+
+	end 	
+
+	def gender (new_gender)
+		@gender = new_gender
+	end	
+
+	def age
+		@age
+	end	
+
+	def ethnicity
+		@ethnicity
+	end	
+
 
 	
 end 
 
-santaing = Santa.new ("agender", "Japanese")
+santaing = Santa.new ("agender", "Japanese") #i don't really see where i'm going wrong here
 santaing.speak
-santaing.eat_milk_and_cookies ("shortbread")	
+santaing.eat_milk_and_cookies ("shortbread")
+
+
+#not sure why i'm getting this error
+#ruby santa.rb
+# santa.rb:28: syntax error, unexpected ',', expecting ')'
+# santaing = Santa.new ("agender", "Japanese")
+                                # ^
+
+
+
+

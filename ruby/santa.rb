@@ -21,16 +21,16 @@ class Santa
 		puts "That was a good #{cookie_type} cookie"
 	end 
 
-	def celebrate_birthday (new_age)
+	def celebrate_birthday=(new_age)
 		@age = age + 1 #i'm not really sure that i'm doing this right
 	end	
 
-	def get_mad_at (reindeer_name)
-		
+	def get_mad_at=(reindeer_name) #do i just reset the reinder ranking var? 
+		reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Comet", "Cupid", "Donner", "Blitzen", "Vixen"]
 
 	end 	
 
-	def gender (new_gender)
+	def gender=(new_gender)
 		@gender = new_gender
 	end	
 
@@ -46,9 +46,16 @@ class Santa
 	
 end 
 
-santaing = Santa.new ("agender", "Japanese") #i don't really see where i'm going wrong here
-santaing.speak
-santaing.eat_milk_and_cookies ("shortbread")
+santa = Santa.new ("agender","Japanese") 
+santa.speak
+santa.eat_milk_and_cookies ("shortbread")
+santa.celebrate_birthday
+santa.get_mad_at
+santa.reindeer_ranking
+santa.gender("male")
+santa.age
+santa.ethnicity
+
 
 
 #not sure why i'm getting this error

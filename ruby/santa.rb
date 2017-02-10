@@ -2,6 +2,13 @@ class Santa
 	attr_reader :age, :ethnicity
 	attr_accessor :celebrate_birthday, :get_mad_at, :gender
 
+	santas = []
+	genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+	ethnicities = ["black", "Latino", "white", "Japanese", "Korean", "Chinese", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+	genders.length.times do |i|
+  	santa << Santa.new(genders[i], ethnicities[i])
+	end
+
 	def initialize (gender, ethnicity)
 		#puts "Initializing Santa instance..."
 		@gender = gender
@@ -49,15 +56,30 @@ class Santa
 	
 end 
 
-santa = Santa.new ("agender","Japanese") 
+santa = Santa.new ("agender", "Japanese") 
 santa.speak
 santa.eat_milk_and_cookies ("shortbread")
 santa.celebrate_birthday
 santa.get_mad_at
 santa.reindeer_ranking
 santa.gender("male")
-santa.age
+santa.age.sample (50) #i don't quite know how to do the random age range? 
 santa.ethnicity
+
+	santas = []
+	genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+	ethnicities = ["black", "Latino", "white", "Japanese", "Korean", "Chinese", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+
+	50.times do 
+		santa = Santa.new 
+		santas << santa
+	end	
+
+	genders.length.times do |i|
+  	santa << Santa.new(genders[i], ethnicities[i])
+	end
+
+	p santas 
 
 
 
@@ -69,5 +91,5 @@ santa.ethnicity
 #i can't properly test my code because of this error... i dunno where it's coming from
 
 
-
+#arr.sample gives me a random part of the array arr.sample(2) gives me two random parts of the array 
 

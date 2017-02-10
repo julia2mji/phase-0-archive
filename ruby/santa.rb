@@ -63,20 +63,26 @@ santa.celebrate_birthday
 santa.get_mad_at
 santa.reindeer_ranking
 santa.gender("male")
-santa.age.sample (50) #i don't quite know how to do the random age range? 
+santa.age
 santa.ethnicity
 
 	santas = []
 	genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
 	ethnicities = ["black", "Latino", "white", "Japanese", "Korean", "Chinese", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+	ages = [20, 35, 42, 56, 68, 71, 89, 94, 111, 128]
 
 	50.times do 
 		santa = Santa.new 
 		santas << santa
 	end	
 
+
+
+	random_age = ages.sample (10)   
+	santas << Santa.new (random_age)
+
 	genders.length.times do |i|
-  	santa << Santa.new(genders[i], ethnicities[i])
+  	santas << Santa.new(genders[i], ethnicities[i])
 	end
 
 	p santas 

@@ -1,4 +1,7 @@
 class Santa 
+	attr_reader :age, :ethnicity
+	attr_accessor :celebrate_birthday, :get_mad_at, :gender
+
 	def initialize (gender, ethnicity)
 		#puts "Initializing Santa instance..."
 		@gender = gender
@@ -21,26 +24,26 @@ class Santa
 		puts "That was a good #{cookie_type} cookie"
 	end 
 
-	def celebrate_birthday=(new_age)
-		@age = age + 1 #i'm not really sure that i'm doing this right
-	end	
+	# def celebrate_birthday=(new_age)
+	# 	@age = age + 1 #i'm not really sure that i'm doing this right
+	# end	
 
-	def get_mad_at=(reindeer_name) #do i just reset the reinder ranking var? 
-		reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Comet", "Cupid", "Donner", "Blitzen", "Vixen"]
+	# def get_mad_at=(reindeer_name) #do i just reset the reinder ranking var? 
+	# 	reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Comet", "Cupid", "Donner", "Blitzen", "Vixen"]
 
-	end 	
+	# end 	
 
-	def gender=(new_gender)
-		@gender = new_gender
-	end	
+	# def gender=(new_gender)
+	# 	@gender = new_gender
+	# end	
 
-	def age
-		@age
-	end	
+	# def age
+	# 	@age
+	# end	
 
-	def ethnicity
-		@ethnicity
-	end	
+	# def ethnicity
+	# 	@ethnicity
+	# end	
 
 
 	
@@ -63,6 +66,7 @@ santa.ethnicity
 # santa.rb:28: syntax error, unexpected ',', expecting ')'
 # santaing = Santa.new ("agender", "Japanese")
                                 # ^
+#i can't properly test my code because of this error... i dunno where it's coming from
 
 
 

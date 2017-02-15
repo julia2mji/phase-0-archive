@@ -28,7 +28,7 @@ class WordGame
 		end
 		@game_count += 1
 		end 
-		p @new_word						
+		p @new_word 					
 	end 
 
 	def game_over

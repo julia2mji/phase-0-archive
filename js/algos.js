@@ -18,4 +18,23 @@ function longestWord(words){
 	return longest; 
 }
 
-longestWord(["big", "bigger", "biggest"])
+longestWord(["big", "bigger", "biggest"]); 
+
+//write a function that takes two objects and checks to see if the objects share at least one key-value pair. (You'll keep adding to this file, so we suggest grouping functions at the top and testing at the bottom of the file.)
+//set up function taking in two objects 
+//i want to iterate/loop over these and check to see if one key/value matches another value in the other object
+//for in loop
+//if none match, i want to return false
+//if one matches, i want to return true 
+
+function keyMatch(obj1, obj2){
+	for (var key in obj1){
+		if (obj1[key] === obj2[key]){
+			return true; 
+		}
+	}
+	return false; 
+}
+
+longestWord(["big", "bigger", "biggest"]); 
+keyMatch({name: "Steven", age: 54}, {name: "Tamir", age: 54}); 

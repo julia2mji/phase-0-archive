@@ -18,7 +18,6 @@ function longestWord(words){
 	return longest; 
 }
 
-longestWord(["big", "bigger", "biggest"]); 
 
 //write a function that takes two objects and checks to see if the objects share at least one key-value pair. (You'll keep adding to this file, so we suggest grouping functions at the top and testing at the bottom of the file.)
 //set up function taking in two objects 
@@ -35,6 +34,25 @@ function keyMatch(obj1, obj2){
 	}
 	return false; 
 }
+
+//function that takes an integer for length, and builds and returns an array of strings of the given length
+//if 3 entered, return array with 3 words 
+//set up function that takes a number
+//set up an array of random words? 
+//since what i want to return is an array, i should probably start off with an empty array to push into? 
+//i need math.random and math.floor to generate a random number 
+
+//this function is currently incomplete. 
+function randomGenerator(num){
+	var dictionary = ["yes", "no", "mmm", "ugh", "happy", "drunken", "eviscerate", "a", "mate", "poopface"]; 
+	var randomWords = []; 
+
+	var random = dictionary[Math.floor(Math.random() * dictionary.length)]; 
+
+	randomWords.push(random); 
+
+}
+
 
 longestWord(["big", "bigger", "biggest"]); 
 keyMatch({name: "Steven", age: 54}, {name: "Tamir", age: 54}); 

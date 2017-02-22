@@ -47,12 +47,15 @@ function randomGenerator(num){
 	var dictionary = ["yes", "no", "mmm", "ugh", "happy", "drunken", "eviscerate", "a", "mate", "poopface"]; 
 	var randomWords = []; 
 
-	var random = dictionary[Math.floor(Math.random() * dictionary.length)]; 
+	// this.length = num 
 
-	randomWords.push(random); 
-
+	for(var i = 1; i <= num; i++){
+		var random = dictionary[Math.floor(Math.random() * dictionary.length)]; 
+	}
+return randomWords.push(random); 
 }
 
 
 longestWord(["big", "bigger", "biggest"]); 
 keyMatch({name: "Steven", age: 54}, {name: "Tamir", age: 54}); 
+randomGenerator(3)

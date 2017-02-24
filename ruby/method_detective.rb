@@ -16,7 +16,7 @@
 # "Stop! You’re under arrest!".<upcase>
 # => "STOP! YOU’RE UNDER ARREST!"
 
-# "the usual".<concat ("suspects">
+# "the usual".<concat ("suspects")>
 #=> "the usual suspects"
 
 # " suspects".<prepend ("the usual")>
@@ -25,7 +25,7 @@
 # "The case of the disappearing last letter".<chop>
 # => "The case of the disappearing last lette"
 
-# "The mystery of the missing first letter".<delete ("T")>
+# "The mystery of the missing first letter".<slice!(0)>
 # => "he mystery of the missing first letter"
 
 # "Elementary,    my   dear        Watson!".<strip>
